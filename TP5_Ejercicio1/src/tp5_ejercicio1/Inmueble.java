@@ -13,6 +13,6 @@ public class Inmueble implements Rentable{
         this.valor = valor;
         this.anios = anios;
     }
-    
+    /*
     
 }
