@@ -4,11 +4,13 @@
  */
 package tp5_ej1;
 
+import java.util.Objects;
+
 /**
  *
  * @author profeblas
  */
-public class Disfraz implements Rentable{
+public class Disfraz implements Rentable, Comparable{
     private String personaje;
     private char talle;
     private int dias;
@@ -70,7 +72,18 @@ public class Disfraz implements Rentable{
     public void desocupar() {
         this.dias=0;
     }
-    
-    
+
+    @Override
+    public int compareTo(Object t) {
+        // Orden Natural con personaje
+        Disfraz d2 = (Disfraz) t;
+        return (this.personaje.compareTo(d2.personaje));
+    }
+
+    @Override
+    public String toString() {
+        return "Disfraz{ " + "personaje=" + personaje + ", talle=" + talle + ", dias=" + dias + ", precio=" + precio + '}';
+    }
+
     
 }
