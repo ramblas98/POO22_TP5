@@ -6,6 +6,9 @@ public class Inmueble implements Rentable{
     private String tipo;
     private double valor;
     private int anios;
+
+    public Inmueble() {
+    }
     
     public Inmueble(String direccion, String tipo, double valor, int anios) {
         this.direccion = direccion;
@@ -13,6 +16,6 @@ public class Inmueble implements Rentable{
         this.valor = valor;
         this.anios = anios;
     }
-    /*
+    
     
 }
