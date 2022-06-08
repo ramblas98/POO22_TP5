@@ -5,6 +5,8 @@
 package tp5_ej1;
 
 import java.util.Arrays;
+import java.time.LocalDate;
+import java.time.Period;
 
 /**
  *
@@ -33,6 +35,18 @@ public class TP5_EJ1 {
         for(int i=0;i<3;i++){
             System.out.println(lista[i].toString());
         }
+        
+        LocalDate f1 = LocalDate.of(1978,01,30);
+        LocalDate f2 = LocalDate.now();
+        
+        System.out.println(f1.toString());
+        System.out.println(f2.toString());
+        
+        Period p = Period.between(f1, f2);
+        System.out.println(p.toString());
+        //edad
+        System.out.println(p.getYears());
+        
     }
     
 }
