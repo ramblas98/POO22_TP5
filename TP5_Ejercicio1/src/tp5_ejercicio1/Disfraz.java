@@ -50,6 +50,21 @@ public class Disfraz implements Rentable{
         this.precio = precio;
     }
     
-    
-    
+     @Override
+    public void alquilar(int periodo) {
+       this.dias += periodo;
+        System.out.println("Alquilado");
+    }
+
+    @Override
+    public boolean alquilado() {
+        return this.dias > 0;
+    }
+
+    @Override
+    public void desocupar() {
+        this.dias = 0;
+        System.out.println("Se desocupo disfraz");
+    }
+  
 }
