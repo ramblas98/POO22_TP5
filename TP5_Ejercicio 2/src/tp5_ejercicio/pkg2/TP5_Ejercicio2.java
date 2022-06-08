@@ -7,7 +7,7 @@ public class TP5_Ejercicio2 {
 
     
     public static void main(String[] args) {
-        //Empleado empleados[] = new Empleado[7];
+        //Empleado empleados[] = new Empleado[3];
         
     }
     
